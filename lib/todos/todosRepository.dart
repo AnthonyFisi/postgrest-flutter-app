@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_postgrest/todosModel.dart';
+import 'package:flutter_postgrest/todos/todosModel.dart';
 import 'package:http/http.dart' as http;
 
   Future<List<todos>> fetchtodosModel(http.Client client) async {
-
-    String url = 'Use ngrok to expose your endpoint /todos or ip address';
+    //Use ngrok to expose your endpoint /todos or ip address;
+    String url = 'http://localhost:3000/todos';
 
     final response = await client.get(url);
 
